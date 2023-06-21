@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #700;
+    --secondary-color: #E00;
+    --text-color: #EEE;
+
+    --font-family: Roboto;
+}
+
+.item {
+    opacity: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+
+    max-height: 45vh;
+    width: 22vw;
+    min-width: 15rem;
+
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    border-radius: 7.5px;
+
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+
+.title {
+    position: absolute;
+    align-self: center;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.prefix {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.button {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    justify-content: space-between;
+
+    width: 100%;
+
+    border: 1px solid;
+    border-color: var(--primary-color);
+    padding: 2px;
+}
+
+.button:focus {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.banner {
+    width: 22vw;
+    min-width: 15rem;
+
+    object-fit: fill;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}

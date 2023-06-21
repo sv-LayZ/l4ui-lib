@@ -1,0 +1,14 @@
+@import './themes/theme.css';
+
+#app {
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
