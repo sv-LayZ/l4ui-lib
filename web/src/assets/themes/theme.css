@@ -3,7 +3,7 @@
     --secondary-color: #E00;
     --text-color: #EEE;
 
-    --font-family: Roboto;
+    font-family: monospace;
 }
 
 .item {
@@ -14,7 +14,7 @@
     flex-direction: column;
     overflow: hidden;
 
-    max-height: 45vh;
+    max-height: 60vh;
     width: 22vw;
     min-width: 15rem;
 
@@ -26,17 +26,11 @@
     color: var(--text-color);
 }
 
-.title {
-    position: absolute;
-    align-self: center;
-    white-space: nowrap;
-    overflow: hidden;
-    font-weight: bold;
-}
-
 .prefix {
     display: flex;
     gap: 0.7rem;
+
+    align-items: center
 }
 
 .button {
@@ -49,7 +43,7 @@
 
     border: 1px solid;
     border-color: var(--primary-color);
-    padding: 2px;
+    padding: 5px;
 }
 
 .button:focus {
@@ -63,5 +57,23 @@
 
     object-fit: fill;
     border-radius: 10px;
-    margin-bottom: 1rem;
+}
+
+.title {
+    position: absolute;
+
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    width: 100%;
+    padding: 7px 15px;
+    background-color: #500;
+    font-size: smaller;
 }
